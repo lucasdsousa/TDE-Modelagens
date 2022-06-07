@@ -43,7 +43,7 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'phone' => $request->tel,
             'document' => $request->doc,
-            'type' => (strlen($request->doc) == 11) ? 'Cliente' : 'Motorista',
+            'type' => (strlen($request->doc) == 11) ? 'Cliente' : 'Transporte',
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
